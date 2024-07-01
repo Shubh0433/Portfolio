@@ -75,6 +75,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .home-content h3 {
@@ -97,8 +98,13 @@ span {
 }
 
 .home-img img {
-  width: 25vh;
-  animation: floatImage 4s ease-in-out infinite;
+    width: 40vh;
+    height: 40vh; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 100%;
+    border: .2rem solid #59b2f4;
+    box-shadow: 0 0 5rem 0 #59b2f4;
+    animation: floatImage 3s ease-in-out infinite;
 }
 
 @keyframes floatImage {
@@ -115,6 +121,8 @@ span {
 
 .home-content p {
   font-size: 1.6rem;
+  text-align: justify;
+  margin-right: 5%;
 }
 
 .social-media a {
@@ -158,12 +166,17 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
   background: var(--snd-bg-color);
 }
 
 .about-img img {
   width: 35vw;
+  height: 55%;
+  border-radius: 0% 25% 0% 25%;
+  border: .2rem solid #59b2f4;
+  box-shadow: 0 0 .3rem .5rem #59b2f4;
+
 }
 
 .heading {
@@ -181,6 +194,7 @@ span {
 }
 
 .about-content p {
+  text-align: justify;
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
@@ -295,6 +309,7 @@ span {
   align-items: center;
   width: 5rem;
   height: 5rem;
+  background:  var(--text-color);
   border-radius: 50%;
 }
 
@@ -453,6 +468,8 @@ span {
 
   .home-img img {
     width: 90vw;
+    height: 90vw;
+    border-radius: 100%;
     margin-top: 4rem;
   }
 
